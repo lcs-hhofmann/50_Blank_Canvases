@@ -13,7 +13,7 @@ import Cocoa
 import PlaygroundSupport
 
 // Create canvas
-let canvas = Canvas(width: 400, height: 300)
+let canvas = Canvas(width: 600, height: 600)
 
 /*:
  ## Add your code below
@@ -22,10 +22,29 @@ let canvas = Canvas(width: 400, height: 300)
  
  Use whitespace and comments as appropriate.
  */
-// Replace this comment with your first comment – what is the goal of the code you're about to write?
+canvas.defaultLineWidth = 2
+canvas.drawShapesWithFill = false
 
+// Draw the outer circles
+for size in stride(from: 590, through: 570, by: -10) {
+    canvas.drawEllipse(centreX: 300, centreY: 300, width: size, height: size)
+}
 
+canvas.translate(byX: 300, byY: 300)
 
+//draw four main circles
+
+canvas.drawEllipse(centreX: Int(142.5), centreY: 0, width: 285, height: 285)
+
+for x in stride(from: 71.25, through: 213.75, by: 142.5) {
+    for y in stride(from: 71.25, through: -71.25, by: -142.5) {
+        for size in stride(from: 85, through: 42, by: -42) {
+            canvas.drawEllipse(centreX: Int(x), centreY: Int(y), width: size, height: size)}}}
+for size in stride(from: 115, through: 57.5, by: -57.5) {
+    canvas.drawEllipse(centreX: Int(142.5), centreY: 0, width: Int(size), height: Int(size))
+}
+for y in stride(from: -10, through: 10, by: 20) {
+    canvas.drawEllipse(centreX: 275, centreY: y, width: 10, height: 10)}
 /*:
  ## Use source control
  To keep your work organized, and receive feedback, source control is a must.
