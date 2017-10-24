@@ -33,9 +33,8 @@ for size in stride(from: 590, through: 570, by: -10) {
 canvas.translate(byX: 300, byY: 300)
 
 //draw four main circles
-
+canvas.rotate(by: 90)
 canvas.drawEllipse(centreX: Int(142.5), centreY: 0, width: 285, height: 285)
-
 for x in stride(from: 71.25, through: 213.75, by: 142.5) {
     for y in stride(from: 71.25, through: -71.25, by: -142.5) {
         for size in stride(from: 85, through: 42, by: -42) {
@@ -45,6 +44,105 @@ for size in stride(from: 115, through: 57.5, by: -57.5) {
 }
 for y in stride(from: -10, through: 10, by: 20) {
     canvas.drawEllipse(centreX: 275, centreY: y, width: 10, height: 10)}
+canvas.rotate(by: 90)
+canvas.drawEllipse(centreX: Int(142.5), centreY: 0, width: 285, height: 285)
+for x in stride(from: 71.25, through: 213.75, by: 142.5) {
+    for y in stride(from: 71.25, through: -71.25, by: -142.5) {
+        for size in stride(from: 85, through: 42, by: -42) {
+            canvas.drawEllipse(centreX: Int(x), centreY: Int(y), width: size, height: size)}}}
+for size in stride(from: 115, through: 57.5, by: -57.5) {
+    canvas.drawEllipse(centreX: Int(142.5), centreY: 0, width: Int(size), height: Int(size))
+}
+for y in stride(from: -10, through: 10, by: 20) {
+    canvas.drawEllipse(centreX: 275, centreY: y, width: 10, height: 10)}
+canvas.rotate(by: 90)
+canvas.drawEllipse(centreX: Int(142.5), centreY: 0, width: 285, height: 285)
+for x in stride(from: 71.25, through: 213.75, by: 142.5) {
+    for y in stride(from: 71.25, through: -71.25, by: -142.5) {
+        for size in stride(from: 85, through: 42, by: -42) {
+            canvas.drawEllipse(centreX: Int(x), centreY: Int(y), width: size, height: size)}}}
+for size in stride(from: 115, through: 57.5, by: -57.5) {
+    canvas.drawEllipse(centreX: Int(142.5), centreY: 0, width: Int(size), height: Int(size))
+}
+for y in stride(from: -10, through: 10, by: 20) {
+    canvas.drawEllipse(centreX: 275, centreY: y, width: 10, height: 10)}
+canvas.rotate(by: 90)
+canvas.drawEllipse(centreX: Int(142.5), centreY: 0, width: 285, height: 285)
+for x in stride(from: 71.25, through: 213.75, by: 142.5) {
+    for y in stride(from: 71.25, through: -71.25, by: -142.5) {
+        for size in stride(from: 85, through: 42, by: -42) {
+            canvas.drawEllipse(centreX: Int(x), centreY: Int(y), width: size, height: size)}}}
+for size in stride(from: 115, through: 57.5, by: -57.5) {
+    canvas.drawEllipse(centreX: Int(142.5), centreY: 0, width: Int(size), height: Int(size))
+}
+for y in stride(from: -10, through: 10, by: 20) {
+    canvas.drawEllipse(centreX: 275, centreY: y, width: 10, height: 10)}
+
+for x in stride(from: -10, through: 10, by: 20) {
+    canvas.drawEllipse(centreX: x, centreY: 10, width: 10, height: 10)
+}
+canvas.rotate(by: 90)
+for x in stride(from: -10, through: 10, by: 20) {
+    canvas.drawEllipse(centreX: x, centreY: 10, width: 10, height: 10)
+}
+canvas.rotate(by: 90)
+for x in stride(from: -10, through: 10, by: 20) {
+    canvas.drawEllipse(centreX: x, centreY: 10, width: 10, height: 10)
+}
+canvas.rotate(by: 90)
+for x in stride(from: -10, through: 10, by: 20) {
+    canvas.drawEllipse(centreX: x, centreY: 10, width: 10, height: 10)
+}
+canvas.rotate(by: 90)
+for x in stride(from: 135, through: 155, by: 20) {
+    canvas.drawEllipse(centreX: x, centreY: 135, width: 10, height: 10)
+}
+canvas.rotate(by: 90)
+for x in stride(from: 135, through: 155, by: 20) {
+    canvas.drawEllipse(centreX: x, centreY: 135, width: 10, height: 10)
+}
+canvas.rotate(by: 90)
+for x in stride(from: 135, through: 155, by: 20) {
+    canvas.drawEllipse(centreX: x, centreY: 135, width: 10, height: 10)
+}
+canvas.rotate(by: 90)
+for x in stride(from: 135, through: 155, by: 20) {
+    canvas.drawEllipse(centreX: x, centreY: 135, width: 10, height: 10)
+}
+
+canvas.rotate(by: 90)
+for x in stride(from: 135, through: 155, by: 20){
+    canvas.drawEllipse(centreX: x, centreY: -135, width: 10, height: 10)
+}
+canvas.rotate(by: 90)
+for x in stride(from: 135, through: 155, by: 20){
+    canvas.drawEllipse(centreX: x, centreY: -135, width: 10, height: 10)
+}
+canvas.rotate(by: 90)
+for x in stride(from: 135, through: 155, by: 20){
+    canvas.drawEllipse(centreX: x, centreY: -135, width: 10, height: 10)
+}
+canvas.rotate(by: 90)
+for x in stride(from: 135, through: 155, by: 20){
+    canvas.drawEllipse(centreX: x, centreY: -135, width: 10, height: 10)
+}
+for i in stride(from: 160, through: 180, by: 20){
+    canvas.drawEllipse(centreX: i, centreY: i, width: 15, height: 15)
+    }
+canvas.rotate(by: 90)
+for i in stride(from: 160, through: 180, by: 20){
+    canvas.drawEllipse(centreX: i, centreY: i, width: 15, height: 15)
+}
+canvas.rotate(by: 90)
+for i in stride(from: 160, through: 180, by: 20){
+    canvas.drawEllipse(centreX: i, centreY: i, width: 15, height: 15)
+}
+canvas.rotate(by: 90)
+for i in stride(from: 160, through: 180, by: 20){
+    canvas.drawEllipse(centreX: i, centreY: i, width: 15, height: 15)
+}
+canvas.rotate(by: 90)
+
 /*:
  ## Use source control
  To keep your work organized, and receive feedback, source control is a must.
