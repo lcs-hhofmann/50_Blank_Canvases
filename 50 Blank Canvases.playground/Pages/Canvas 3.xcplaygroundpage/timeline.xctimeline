@@ -2,15 +2,5 @@
 <Timeline
    version = "3.0">
    <TimelineItems>
-      <LoggerValueHistoryTimelineItem
-         documentLocation = "file:///Users/hhofmann/Documents/Computer%20Studies/50_Blank_Canvases/50%20Blank%20Canvases.playground/Pages/Canvas%203.xcplaygroundpage#CharacterRangeLen=6&amp;CharacterRangeLoc=5022&amp;EndingColumnNumber=11&amp;EndingLineNumber=126&amp;StartingColumnNumber=5&amp;StartingLineNumber=126&amp;Timestamp=530505355.748005"
-         selectedRepresentationIndex = "0"
-         shouldTrackSuperviewWidth = "NO">
-      </LoggerValueHistoryTimelineItem>
-      <LoggerValueHistoryTimelineItem
-         documentLocation = "file:///Users/hhofmann/Documents/Computer%20Studies/50_Blank_Canvases/50%20Blank%20Canvases.playground/Pages/Canvas%203.xcplaygroundpage#CharacterRangeLen=6&amp;CharacterRangeLoc=4946&amp;EndingColumnNumber=7&amp;EndingLineNumber=124&amp;StartingColumnNumber=1&amp;StartingLineNumber=124&amp;Timestamp=530505355.748347"
-         selectedRepresentationIndex = "0"
-         shouldTrackSuperviewWidth = "NO">
-      </LoggerValueHistoryTimelineItem>
    </TimelineItems>
 </Timeline>
