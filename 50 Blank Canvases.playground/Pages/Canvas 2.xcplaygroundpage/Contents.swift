@@ -14,6 +14,8 @@ import PlaygroundSupport
 
 // Create canvas
 let canvas = Canvas(width: 600, height: 600)
+canvas.fillColor = Color.black
+canvas.drawRectangle(bottomLeftX: 0, bottomLeftY: 0, width: 600, height: 600)
 
 /*:
  ## Add your code below
@@ -23,6 +25,7 @@ let canvas = Canvas(width: 600, height: 600)
  Use whitespace and comments as appropriate.
  */
 canvas.defaultLineWidth = 2
+canvas.borderColor = Color.white
 canvas.translate(byX: 300, byY: 300)
 
 //draw the outer circles
