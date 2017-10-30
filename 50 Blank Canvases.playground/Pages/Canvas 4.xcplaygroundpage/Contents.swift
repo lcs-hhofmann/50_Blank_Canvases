@@ -13,7 +13,7 @@ import Cocoa
 import PlaygroundSupport
 
 // Create canvas
-let canvas = Canvas(width: 400, height: 300)
+let canvas = Canvas(width: 400, height: 400)
 
 /*:
  ## Add your code below
@@ -25,7 +25,33 @@ let canvas = Canvas(width: 400, height: 300)
 // Replace this comment with your first comment – what is the goal of the code you're about to write?
 
 
+canvas.drawShapesWithBorders=false
+canvas.translate(byX: 200, byY: 200)
 
+for _ in stride(from: 1, through: 10, by: 1) {
+  canvas.fillColor = Color.red
+var trianglePoint : [NSPoint] = []
+trianglePoint.append(NSPoint(x: 0, y: 0))
+trianglePoint.append(NSPoint(x: 40, y: 0))
+trianglePoint.append(NSPoint(x: 20, y: 40))
+canvas.drawCustomShape(with: trianglePoint)
+
+    canvas.fillColor = Color.orange
+var happypoint : [NSPoint] = []
+happypoint.append(NSPoint(x: 00, y: 100))
+happypoint.append(NSPoint(x: 40, y: 100))
+happypoint.append(NSPoint(x: 20, y: 140))
+canvas.drawCustomShape(with: happypoint)
+
+    
+canvas.fillColor = Color.yellow
+    var yopoint : [NSPoint] = []
+    yopoint.append(NSPoint(x: 40, y: 150))
+    yopoint.append(NSPoint(x: 80, y: 150))
+    yopoint.append(NSPoint(x: 60, y: 190))
+    canvas.drawCustomShape(with: yopoint)
+    canvas.rotate(by: 36)
+}
 /*:
  ## Use source control
  To keep your work organized, and receive feedback, source control is a must.
