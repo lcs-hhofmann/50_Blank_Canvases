@@ -27,6 +27,7 @@ canvas.drawShapesWithBorders = false
 canvas.fillColor = Color.black
 canvas.drawRectangle(centreX: 250, centreY: 250, width: 600, height: 600)
 
+
 //Add cool background pop colour
 canvas.fillColor = Color.init(hue: 317, saturation: 39, brightness: 97, alpha: 100)
 canvas.drawEllipse(centreX: 250, centreY: 250, width: 400, height: 400)
@@ -47,6 +48,11 @@ canvas.drawShapesWithFill = false
 canvas.borderColor = Color.black
 canvas.drawEllipse(centreX: 250, centreY: 250, width: 500, height: 500, borderWidth: 100)
 
+//add the crossbones
+canvas.lineColor = Color.white
+canvas.drawLine(fromX: 75, fromY: 75, toX: 425, toY: 425, lineWidth: 50)
+canvas.drawLine(fromX: 75, fromY: 425, toX: 425, toY: 75, lineWidth: 50)
+
 //add the eyes
 canvas.drawShapesWithFill = true
 canvas.fillColor = Color.black
@@ -55,6 +61,7 @@ for x in stride(from: 200, through: 300, by: 100){
 }
 
 //nose
+canvas.lineColor = Color.black
 canvas.drawLine(fromX: 250, fromY: 230, toX: 260, toY: 210, lineWidth: 22, capStyle: NSBezierPath.LineCapStyle.roundLineCapStyle)
 canvas.drawLine(fromX: 250, fromY: 230, toX: 240, toY: 210, lineWidth: 22, capStyle: NSBezierPath.LineCapStyle.roundLineCapStyle)
 
@@ -64,7 +71,6 @@ canvas.drawLine(fromX: 202, fromY: 137, toX: 298, toY: 137, lineWidth: 1, capSty
 for x in stride(from: 205, through: 295, by: 5) {
     canvas.drawRoundedRectangle(centreX: x, centreY: 137, width: 5, height: 20)
 }
-
 
 /*:
  ## Use source control
