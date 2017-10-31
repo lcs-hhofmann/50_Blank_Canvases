@@ -49,12 +49,23 @@ canvas.borderColor = Color.black
 canvas.drawEllipse(centreX: 250, centreY: 250, width: 500, height: 500, borderWidth: 100)
 
 //add the crossbones
+canvas.drawShapesWithFill = true
 canvas.lineColor = Color.white
+canvas.fillColor = Color.white
+canvas.drawShapesWithBorders = false
 canvas.drawLine(fromX: 75, fromY: 75, toX: 425, toY: 425, lineWidth: 50)
 canvas.drawLine(fromX: 75, fromY: 425, toX: 425, toY: 75, lineWidth: 50)
+canvas.drawEllipse(centreX: 50, centreY: 425, width: 75, height: 75)
+canvas.drawEllipse(centreX: 75, centreY: 450, width: 75, height: 75)
+canvas.drawEllipse(centreX: 425, centreY: 450, width: 75, height: 75)
+canvas.drawEllipse(centreX: 450, centreY: 425, width: 75, height: 75)
+canvas.drawEllipse(centreX: 50, centreY: 75, width: 75, height: 75)
+canvas.drawEllipse(centreX: 75, centreY: 50, width: 75, height: 75)
+canvas.drawEllipse(centreX: 425, centreY: 50, width: 75, height: 75)
+canvas.drawEllipse(centreX: 450, centreY: 75, width: 75, height: 75)
+
 
 //add the eyes
-canvas.drawShapesWithFill = true
 canvas.fillColor = Color.black
 for x in stride(from: 200, through: 300, by: 100){
     canvas.drawEllipse(centreX: x, centreY: 275, width: 40, height: 50)
@@ -67,6 +78,7 @@ canvas.drawLine(fromX: 250, fromY: 230, toX: 240, toY: 210, lineWidth: 22, capSt
 
 //mouth
 canvas.drawShapesWithFill = false
+canvas.drawShapesWithBorders = true
 canvas.drawLine(fromX: 202, fromY: 137, toX: 298, toY: 137, lineWidth: 1, capStyle: NSBezierPath.LineCapStyle.buttLineCapStyle)
 for x in stride(from: 205, through: 295, by: 5) {
     canvas.drawRoundedRectangle(centreX: x, centreY: 137, width: 5, height: 20)
