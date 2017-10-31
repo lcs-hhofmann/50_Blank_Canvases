@@ -23,20 +23,33 @@ let canvas = Canvas(width: 500, height: 500)
  Use whitespace and comments as appropriate.
  */
 // Change the background
+canvas.drawShapesWithBorders = false
 canvas.fillColor = Color.black
 canvas.drawRectangle(centreX: 250, centreY: 250, width: 600, height: 600)
+
+//Add cool background pop colour
+canvas.fillColor = Color.init(hue: 317, saturation: 39, brightness: 97, alpha: 100)
+canvas.drawEllipse(centreX: 250, centreY: 250, width: 400, height: 400)
 
 //Draw the outside skull
 canvas.fillColor = Color.white
 canvas.drawEllipse(centreX: 250, centreY: 250, width: 300, height: 350)
 
 //add the cheekbones
-canvas.fillColor = Color.black
+canvas.fillColor = Color.init(hue: 317, saturation: 39, brightness: 97, alpha: 100)
 for x in stride(from: 100, through: 400, by: 300) {
     canvas.drawEllipse(centreX: x, centreY: 125, width: 150, height: 200)
 }
 
+//fix the colour pop circle
+canvas.drawShapesWithBorders = true
+canvas.drawShapesWithFill = false
+canvas.borderColor = Color.black
+canvas.drawEllipse(centreX: 250, centreY: 250, width: 500, height: 500, borderWidth: 100)
+
 //add the eyes
+canvas.drawShapesWithFill = true
+canvas.fillColor = Color.black
 for x in stride(from: 200, through: 300, by: 100){
     canvas.drawEllipse(centreX: x, centreY: 275, width: 40, height: 50)
 }
@@ -51,6 +64,8 @@ canvas.drawLine(fromX: 202, fromY: 137, toX: 298, toY: 137, lineWidth: 1, capSty
 for x in stride(from: 205, through: 295, by: 5) {
     canvas.drawRoundedRectangle(centreX: x, centreY: 137, width: 5, height: 20)
 }
+
+
 /*:
  ## Use source control
  To keep your work organized, and receive feedback, source control is a must.
