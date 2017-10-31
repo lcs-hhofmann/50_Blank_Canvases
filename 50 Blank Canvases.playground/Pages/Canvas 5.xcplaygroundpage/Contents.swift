@@ -13,7 +13,7 @@ import Cocoa
 import PlaygroundSupport
 
 // Create canvas
-let canvas = Canvas(width: 400, height: 300)
+let canvas = Canvas(width: 500, height: 500)
 
 /*:
  ## Add your code below
@@ -22,10 +22,35 @@ let canvas = Canvas(width: 400, height: 300)
  
  Use whitespace and comments as appropriate.
  */
-// Replace this comment with your first comment – what is the goal of the code you're about to write?
+// Change the background
+canvas.fillColor = Color.black
+canvas.drawRectangle(centreX: 250, centreY: 250, width: 600, height: 600)
 
+//Draw the outside skull
+canvas.fillColor = Color.white
+canvas.drawEllipse(centreX: 250, centreY: 250, width: 300, height: 350)
 
+//add the cheekbones
+canvas.fillColor = Color.black
+for x in stride(from: 100, through: 400, by: 300) {
+    canvas.drawEllipse(centreX: x, centreY: 125, width: 150, height: 200)
+}
 
+//add the eyes
+for x in stride(from: 200, through: 300, by: 100){
+    canvas.drawEllipse(centreX: x, centreY: 275, width: 40, height: 50)
+}
+
+//nose
+canvas.drawLine(fromX: 250, fromY: 230, toX: 260, toY: 210, lineWidth: 22, capStyle: NSBezierPath.LineCapStyle.roundLineCapStyle)
+canvas.drawLine(fromX: 250, fromY: 230, toX: 240, toY: 210, lineWidth: 22, capStyle: NSBezierPath.LineCapStyle.roundLineCapStyle)
+
+//mouth
+canvas.drawShapesWithFill = false
+canvas.drawLine(fromX: 202, fromY: 137, toX: 298, toY: 137, lineWidth: 1, capStyle: NSBezierPath.LineCapStyle.buttLineCapStyle)
+for x in stride(from: 205, through: 295, by: 5) {
+    canvas.drawRoundedRectangle(centreX: x, centreY: 137, width: 5, height: 20)
+}
 /*:
  ## Use source control
  To keep your work organized, and receive feedback, source control is a must.
