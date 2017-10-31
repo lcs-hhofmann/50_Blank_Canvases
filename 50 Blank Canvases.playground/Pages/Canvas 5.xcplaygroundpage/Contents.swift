@@ -68,7 +68,7 @@ canvas.drawEllipse(centreX: 450, centreY: 75, width: 75, height: 75)
 //add the eyes
 canvas.fillColor = Color.black
 for x in stride(from: 200, through: 300, by: 100){
-    canvas.drawEllipse(centreX: x, centreY: 275, width: 40, height: 50)
+    canvas.drawEllipse(centreX: x, centreY: 275, width: 50, height: 60)
 }
 
 //nose
