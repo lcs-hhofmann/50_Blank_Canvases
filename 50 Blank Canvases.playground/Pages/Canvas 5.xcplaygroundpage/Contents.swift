@@ -104,3 +104,5 @@ for x in stride(from: 205, through: 295, by: 5) {
  */
 // Don't remove the code below
 PlaygroundPage.current.liveView = canvas.imageView
+
+canvas.copyToClipboard()

@@ -73,3 +73,5 @@ canvas.fillColor = Color.yellow
 // Don't remove the code below
 PlaygroundPage.current.liveView = canvas.imageView
 
+canvas.copyToClipboard()
+

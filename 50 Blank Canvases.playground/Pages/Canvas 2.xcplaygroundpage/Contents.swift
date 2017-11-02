@@ -28,11 +28,8 @@ canvas.defaultLineWidth = 2
 canvas.borderColor = Color.white
 canvas.translate(byX: 300, byY: 300)
 
-//draw the outer circles
 canvas.drawShapesWithFill = false
-for size in stride(from: 590, through: 570, by: -10) {
-    canvas.drawEllipse(centreX: 0, centreY: 0, width: size, height: size)
-}
+
  //draw the inner pattern
 for _ in stride(from: 1, through: 4, by: 1) {
 canvas.drawEllipse(centreX: Int(142.5), centreY: 0, width: 285, height: 285)
@@ -43,6 +40,8 @@ for x in stride(from: 71.25, through: 213.75, by: 142.5) {
 for size in stride(from: 115, through: 57.5, by: -57.5) {
     canvas.drawEllipse(centreX: Int(142.5), centreY: 0, width: Int(size), height: Int(size))
 }
+    
+
 for y in stride(from: -10, through: 10, by: 20) {
     canvas.drawEllipse(centreX: 275, centreY: y, width: 10, height: 10)
     }
@@ -63,6 +62,11 @@ for i in stride(from: 160, through: 180, by: 20){
     canvas.rotate(by: 90)
 }
 
+//draw the outer circles
+canvas.drawShapesWithFill = false
+for size in stride(from: 590, through: 570, by: -10) {
+    canvas.drawEllipse(centreX: 0, centreY: 0, width: size, height: size)
+}
 
 /*:
  ## Use source control
